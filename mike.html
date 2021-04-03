@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mike portfolio</title>
+</head>
+<body>
+
+
+<style>
+
+
+body{
+
+	background: rgb(0,0,0,0.8);
+	color: rgb(255,255,255,0.9);
+}
+
+
+#leftNav{
+
+
+	background: black;
+
+	height: 100%;
+
+	width: 5%;
+
+	position: fixed;
+
+	left: 0;
+
+	top:0;
+
+	display: flex;
+
+	flex-direction: column;
+
+	justify-content: flex-end;
+
+	align-items: center;
+
+
+
+
+}
+	
+
+#leftNavA{
+  height: 45%;
+  width: 90%;
+  margin-bottom:45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+#leftNavB{
+  height: 35%;
+  width: 90%;
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.leftNavAlogo{
+
+	height: 15%;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inactiveLeftNavAlogo{
+   opacity: 0.4;
+}
+
+
+.logoImg{
+
+	height: 65%;
+	width: auto;
+
+
+}
+
+
+.leftNavBlogo{
+
+	height: 25%;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.8;
+
+}
+
+
+
+#textDiv{
+
+	position: absolute;
+	left: 10%;
+	top: 20%;
+	height: 60%;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+
+
+}
+
+
+#textDivA{
+
+	height: 70%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+
+#textDivAA{
+
+	height: 80%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+
+.textDivAAA{
+
+    height: 25%;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 4.5vw;
+
+}
+
+#textDivAB{
+
+	height: 20%;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+
+
+}
+
+
+#textDivB{
+
+	height: 30%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#textDivBA{
+
+	height: 35%;
+	width: 15%;
+	margin-bottom: 4.5%;
+	border-radius: 5px;
+	border: solid 1.5px;
+	border-color: rgb(0,191,255);
+	color: rgb(0,191,255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2vw;
+	cursor: pointer;
+}
+
+
+</style>
+
+
+	
+<div id='leftNav'>
+
+
+	<div id='leftNavA'>
+		<div class='leftNavAlogo'>
+
+		<img class='logoImg' src="img/home.png">
+			
+		</div>
+
+		<div class='leftNavAlogo'>
+		    <img class='logoImg inactiveLeftNavAlogo' src="img/user.png">
+
+		</div>
+
+		<div class='leftNavAlogo'>
+		   <img class='logoImg inactiveLeftNavAlogo' src="img/copy.png">
+		</div>
+
+		<div class='leftNavAlogo'>
+		   <img class='logoImg inactiveLeftNavAlogo' src="img/email.png">
+			
+		</div>
+	</div>
+
+	<div id='leftNavB'>
+		
+		<div class='leftNavBlogo'>
+			
+		</div>
+
+		<div class='leftNavBlogo'>
+			 <img class='logoImg' src="img/medium.png">
+		</div>
+
+		<div class='leftNavBlogo'>
+		   <img class='logoImg ' src="img/youtube.png">
+		</div>
+	</div>
+
+
+</div>
+
+
+
+  <div id='textDiv'>
+
+  	  <div id='textDivA'>
+
+  	  	 <div id='textDivAA'>
+  	  	 	<div class='textDivAAA'>Hi,</div>
+  	  	 	<div class='textDivAAA'>I'm Michael,</div>
+  	  	 	<div class='textDivAAA'>web developer.</div>
+  	  	 </div>
+
+  	  	 <div id='textDivAB'>PHP/Symfony/Javascript/Css</div>
+  	  	
+
+  	  </div>
+
+  	  <div id='textDivB'>
+
+  	  	 <div id='textDivBA'>
+  	  	 	My work
+  	  	 </div>
+  	  	
+  	  </div>
+
+
+  	
+  </div>
+
+</body>
+</html>
