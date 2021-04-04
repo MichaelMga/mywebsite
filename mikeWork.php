@@ -1,18 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php 
 
-</head>
-<body>
+   require 'header.php';
+
+?>
+
+
 	
 <style>
 
 
    body{
    	  background: rgb(0,0,0,0.8);
+	  font-family: 'Fredoka One', cursive;
+	  color:rgba(10, 15, 25, 0.72);
    }
 
    #headerDiv{
@@ -26,7 +26,7 @@
 	  justify-content: center;
 	  align-items: center;
 	  color: rgba(115, 209, 201, 0.8);
-	  font-size: 2vw;
+	  font-size: 1.75vw;
 
    }
 
@@ -122,6 +122,7 @@
    	height: 24%;
    	width: 100%;
    	background: grey;
+	border-radius: 5px;
    }
 
  
@@ -145,7 +146,7 @@
 .projectSquareB{
 	height: 20%;
 	width: 100%;
-	background: orange;
+	background: rgba(242, 145, 20, 0.8);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -157,7 +158,7 @@
 
 	height: 45%;
 	width: 80%;
-	font-size: 2vw;
+	font-size: 1.75vw;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -173,7 +174,7 @@
 
 	height: 40%;
 	width: 80%;
-	font-size: 1vw;
+	font-size: 0.7vw;
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
@@ -209,7 +210,7 @@
 			</div>
 			<div class="projectSquareB">
 				<div class="projectSquareBA">Monopoly AIs</div>
-				<div class="projectSquareBB">Javascript, hashing, search trees</div>
+				<div class="projectSquareBB">JS, AI algos</div>
 			</div>
 	   </div>
 	   <div class="projectSquare">
@@ -219,7 +220,7 @@
 		</div>
 		<div class="projectSquareB">
 			<div class="projectSquareBA">EVA (Chess AI)</div>
-			<div class="projectSquareBB">Javascript, hashing, search trees</div>
+			<div class="projectSquareBB">JS,  AI algos</div>
 		</div>
      </div>	   
    
@@ -230,7 +231,7 @@
 		</div>
 		<div class="projectSquareB">
 			<div class="projectSquareBA">Smart(blockchain)</div>
-			<div class="projectSquareBB">PHP, JS</div>
+			<div class="projectSquareBB">PHP, SQL, JS</div>
 		</div>
      </div>	 
 

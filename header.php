@@ -1,21 +1,38 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Mike portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+
+
+
+
+
+    
+
 </head>
 <body>
 
 
-<style>
+  <style>
+
+
 
 
 body{
 
-	background: rgb(0,0,0,0.8);
-	color: rgb(255,255,255,0.9);
+
+    color:white;
 }
-
-
+      
 #leftNav{
 
 
@@ -157,9 +174,6 @@ body{
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
-
-
-
 }
 
 
@@ -190,12 +204,16 @@ body{
 }
 
 
-</style>
 
 
-	
+
+
+
+
+
+  </style>
+
 <div id='leftNav'>
-
 
 	<div id='leftNavA'>
 		<div class='leftNavAlogo'>
@@ -236,35 +254,3 @@ body{
 
 
 </div>
-
-
-
-  <div id='textDiv'>
-
-  	  <div id='textDivA'>
-
-  	  	 <div id='textDivAA'>
-  	  	 	<div class='textDivAAA'>Hi,</div>
-  	  	 	<div class='textDivAAA'>I'm Michael,</div>
-  	  	 	<div class='textDivAAA'>web developer.</div>
-  	  	 </div>
-
-  	  	 <div id='textDivAB'>PHP/Symfony/Javascript/Css</div>
-  	  	
-
-  	  </div>
-
-  	  <div id='textDivB'>
-
-  	  	 <div id='textDivBA'>
-  	  	 	My work
-  	  	 </div>
-  	  	
-  	  </div>
-
-
-  	
-  </div>
-
-</body>
-</html>

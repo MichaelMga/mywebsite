@@ -1,9 +1,13 @@
+<?php 
+
+   require 'header.php';
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
 
 
 </head>
@@ -146,10 +150,6 @@
 
 
 
-
-
-
-
 	  #nameDiv{
 
 		  position: absolute;
@@ -278,6 +278,7 @@
 	</style>
 
 
+<div id='backgroundDiv'>
 
 
 <div id='nameDiv'>
@@ -368,7 +369,10 @@
 	 </div>
   </div>
 
- 
+
+
+
+</div>
 
 </body>
 </html>
