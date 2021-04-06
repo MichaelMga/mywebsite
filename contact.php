@@ -99,7 +99,7 @@ body{
                   <div class="card-body text-center">
                     <i class="fas fa-envelope fa-5x mb-3" style='color:white' aria-hidden="true"></i>
                     <h4 class="text-uppercase mb-5" style='color:white'>Mail</h4>
-                   <address>michael.mangajocky@gmail.com </address>
+                   <address>m.mangajocky@gmail.com </address>
                   </div>
                 </div>
              </div>
@@ -108,7 +108,7 @@ body{
                   <div class="card-body text-center">
                     <i class="fab fa-linkedin fa-5x mb-3" style='color:white' aria-hidden="true"></i>
                     <h4 class="text-uppercase mb-5">Linkedin</h4>
-                    <address><button>Reach me</button> </address>
+                    <address><button style='border-radius:5px; border:none'>Reach me</button> </address>
                   </div>
                 </div>
              </div>

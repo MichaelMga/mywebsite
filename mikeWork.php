@@ -19,8 +19,8 @@
 
    	  position: absolute;
    	  top: 7.25%;
-   	  left: 45%;
-   	  height: 10%;
+   	  left: 46%;
+   	  height: 11%;
    	  width: 10%;
 	  display: flex;
 	  justify-content: center;
@@ -37,7 +37,7 @@
    	top: 27.5%;
    	height: 70%;
    	width: 80%;
-   	left:10%;
+   	left:11.5%;
    	display: flex;
    	flex-direction: column;
    	justify-content: space-around;
@@ -45,9 +45,48 @@
 
    }
 
+
+   .hiddenDiv{
+       position: relative;
+	   top: 0;
+	   left: 0;
+	   display:flex;
+	   align-items:flex-start;
+	   justify-content:flex-start;
+	   flex-wrap: wrap;
+	   color:white;
+	   font-size:1.25vw;
+	   display:none;
+	   line-height: 22.5px;
+	   padding:5%;
+   }
+
+   .linkBtn{
+	   position: absolute;
+	   bottom: 5%;
+	   right: 5%;
+	   display: flex;
+	   justify-content:center;
+	   align-items:center;
+	   display: none;
+	   height:20%;
+	   width: 35%;
+   }
+
+   .linkBtn button{
+
+	   border:none;
+	   border-radius:10px;
+	   height:100%;
+	   width: 100%;
+
+   }
+
+
+
    .projectsDivRow{
 
-   	  height: 48%;
+   	  height: 49%;
    	  width: 100%;
    	  display: flex;
    	  flex-direction: row;
@@ -60,14 +99,26 @@
    .projectSquare{
 
    	height: 100%;
-   	width: 24.5%;
+   	width: 32.75%;
    	background: rgba(255, 255, 255, 0.603);
 	display: flex;
 	flex-direction: column;
 	border-radius: 5px;
-
+	cursor: pointer;
+	position: relative;
 
    }
+
+   .projectSquare:hover > .projectSquareA { opacity: 0.05 }
+   .projectSquare:hover > .projectSquareB { opacity: 0.05 }
+   .projectSquare:hover > .hiddenDiv { display: flex; }
+   .projectSquare:hover > .linkBtn { display: flex; }
+
+
+
+
+   
+
 
    .projectSquareA{
 	   display: flex;
@@ -75,9 +126,36 @@
 	   align-items: center;
    }
 
+
+
+
+   a{
+
+	   z-index:5;
+	   cursor:pointer;
+	   text-decoration: none;
+
+   }
+
+
+   button{
+
+	   cursor: pointer;
+	   outline:none;
+   }
+
+
+
+
+
+	span{
+
+		font-size: 0.95vw;
+	}
+   
  
 
-@media all and (max-width: 800px){
+@media all and (max-width: 600px){
 
  
    #headerDiv{
@@ -87,28 +165,37 @@
    	  left: 25%;
    	  height: 12.5%;
    	  width: 50%;
-   	  background: red;
 
    }
 
 
    #projectsDiv{
-
    	position: absolute;
    	top: 22.5%;
    	height: 300%;
    	width: 85%;
    	left:7.5%;
-   	background: blue;
-
    }
+
+    
+	.hiddenDiv{
+
+		font-size: 3.5vw;
+	}
+
+
+	span{
+
+		font-size: 3vw;
+	}
+   
+
 
 
    .projectsDivRow{
 
    	  height: 48%;
    	  width: 100%;
-   	  background: red;
    	  display: flex;
    	  flex-direction: column;
    	  justify-content: space-around;
@@ -185,7 +272,7 @@
 
 .portfolioImg{
 
-	height: 50%;
+	height: 55%;
 	width: auto;
 }
 
@@ -205,8 +292,19 @@
 
 	<div class="projectsDivRow">
 	   <div class="projectSquare">
+
+	   <div class='hiddenDiv'> 3 advanced Monopoly AIs building strategies in real time , using search trees, hashing and sorting algorithms.
+	   </div>
+
+	   
+		<a href='www.youtube.com' class='linkBtn'>
+		
+			<button>use it</button>
+		
+		</a>
+
 	    	<div class="projectSquareA">
-				<img style='height: 60%;' src='img/monop.png' class='portfolioImg'>
+				<img style='height: 65%;' src='img/monop.png' class='portfolioImg'>
 			</div>
 			<div class="projectSquareB">
 				<div class="projectSquareBA">Monopoly AIs</div>
@@ -214,6 +312,15 @@
 			</div>
 	   </div>
 	   <div class="projectSquare">
+    	   <div class='hiddenDiv'>I built a chess AI (I called Eva) , using alpha beta , hashings and sorting algorithms.</div>
+
+		 <a href='www.youtube.com' class='linkBtn'>
+		
+		     <button>use it</button>
+	
+       	</a>
+
+
 		<div class="projectSquareA">
 			<img src='img/eva.png' class='portfolioImg'>
 
@@ -225,6 +332,14 @@
      </div>	   
    
 	 <div class="projectSquare">
+  	   <div class='hiddenDiv'>Smartchain is a transaction system , implementing a blockchain mechanism. </br>Each transaction is mined, and inserted, in a fashion to make it incoruptible. </div>
+
+		 <a href='www.youtube.com' class='linkBtn'>
+		
+	     	<button>use it</button>
+  	
+	    </a>
+
 		<div class="projectSquareA">
 			<img src='img/smart.png' class='portfolioImg'>
 
@@ -235,21 +350,20 @@
 		</div>
      </div>	 
 
-	 <div class="projectSquare">
-		<div class="projectSquareA">
-			<img src='img/field.png' class='portfolioImg'>
-
-		</div>
-		<div class="projectSquareB">
-			<div class="projectSquareBA">Betnet(Bet AI)</div>
-			<div class="projectSquareBB">PHP, JS</div>
-		</div>
-     </div>	 
 	</div>
+
     <div class="projectsDivRow">
 		<div class="projectSquare">
+		<div class='hiddenDiv'>Belleimage , photography selling app including a cart system (implementing Stripe API), and a message system. </br> <span style='opacity:0.9'>Test : type "event" in the search bar.</br> Test credit card :"42424242422"</span>
+		</div>
+
+		<a href='www.youtube.com' class='linkBtn'>
+	     	<button>use it</button>
+	     </a>
+
+
 			<div class="projectSquareA">
-				<img style='height:45%; opacity: 0.8;' src='img/belleimage.png' class='portfolioImg'>
+				<img style='height:50%; opacity: 0.8;' src='img/belleimage.png' class='portfolioImg'>
 
 			</div>
 			<div class="projectSquareB">
@@ -259,6 +373,15 @@
 		 </div>	 
 	
 		 <div class="projectSquare">
+		 <div class='hiddenDiv'>SmartLab , productivity tracking app. Build your own lab , and get data about your work habits <span style=' opacity:0.9'>Test admin : "guest"</br> Test password : "pass"</span></div>
+		 
+		 <a href='www.youtube.com' class='linkBtn'>
+		
+	      	<button>use it</button>
+	
+	     </a>
+
+
 			<div class="projectSquareA">
 				<img src='img/stats.png' class='portfolioImg'>
 
@@ -270,26 +393,24 @@
 		 </div>	 
 	
 		 <div class="projectSquare">
-			<div class="projectSquareA">
-				<img style='opacity: 0.8;' src='img/pandemic.png' class='portfolioImg'>
-			</div>
-			<div class="projectSquareB">
-				<div class="projectSquareBA">Pandemic(browser)</div>
-				<div class="projectSquareBB">JS</div>
-			</div>
-		 </div>	 
-	
-		 <div class="projectSquare">
-			<div class="projectSquareA">
-				<img src='img/hero.png' class='portfolioImg'>
+		   <div class='hiddenDiv'>Betnet is a betting prediction model , based on a monte carlo algorithm. Data collected through an API, to simulate 10 000 games before the calculation of each odd.</div>
 
+		   <a href='https://www.youtube.com' class='linkBtn'>
+		
+		         <button>use it</button>
+	
+	       </a>
+
+
+			<div class="projectSquareA">
+				<img style='opacity: 0.8;' src='img/field.png' class='portfolioImg'>
 			</div>
 			<div class="projectSquareB">
-				<div class="projectSquareBA">hero(browser)</div>
+				<div class="projectSquareBA">betnet(soccer AI)</div>
 				<div class="projectSquareBB">JS</div>
 			</div>
 		 </div>	 
-	
+
 	</div>
 </div>
 

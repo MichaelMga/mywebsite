@@ -31,6 +31,8 @@ body{
 
 
     color:white;
+
+	background: rgb(0,0,0,0.8);
 }
       
 #leftNav{
@@ -92,6 +94,7 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 }
 
 .inactiveLeftNavAlogo{
@@ -116,6 +119,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	opacity: 0.8;
+	position: relative;
 
 }
 
@@ -201,13 +205,117 @@ body{
 	align-items: center;
 	font-size: 2vw;
 	cursor: pointer;
+	position:relative;
+
+}
+
+
+.workLink{
+
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width: 100%;
+	z-index: 5;
 }
 
 
 
+.navLink{
+
+	position: absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width: 100%;
+	z-index: 5;
+}
+
+@media all and (max-width: 600px){
+
+  #leftNav{
+	background: black;
+	height: 10%;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top:90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	z-index:8;
+   }
+
+
+   #leftNavA{ 
+
+	 height: 100%;
+     width: 100%;
+     margin-bottom:0;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+
+   }
+
+   .leftNavAlogo {
+    
+	  height: 75%;
+      width: 22.5%;
+
+   }
 
 
 
+   #leftNavB{ 
+
+	   display:none;
+   }
+
+
+   .textDivAAA{
+
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12.5vw;
+
+}
+
+
+#textDivAB {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 7.5%;
+    font-size: 5.25vw;
+}
+
+
+#textDivBA {
+    height: 35%;
+    width: 90%;
+    margin-bottom: 4.5%;
+    border-radius: 5px;
+    border: solid 1.5px;
+    border-color: rgb(0,191,255);
+    color: rgb(0,191,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6.5vw;
+    cursor: pointer;
+}
+	
+
+}
 
 
 
@@ -216,22 +324,34 @@ body{
 <div id='leftNav'>
 
 	<div id='leftNavA'>
-		<div class='leftNavAlogo'>
+		<div class='leftNavAlogo' id='homeLink'>
 
-		<img class='logoImg' src="img/home.png">
+		  <a class='navLink' href="http://localhost/mywebsite/mike.php"></a>
+
+		  <img class='logoImg' src="img/home.png">
 			
 		</div>
 
-		<div class='leftNavAlogo'>
+		<div class='leftNavAlogo' id='userLink'>
+
+		<a class='navLink' href="http://localhost/mywebsite/mikeProfile.php"></a>
+
 		    <img class='logoImg inactiveLeftNavAlogo' src="img/user.png">
 
 		</div>
 
-		<div class='leftNavAlogo'>
+		<div class='leftNavAlogo' id='portfolioLink'>
+
+		  <a class='navLink' href="http://localhost/mywebsite/mikeWork.php"></a>
+
 		   <img class='logoImg inactiveLeftNavAlogo' src="img/copy.png">
+		
 		</div>
 
-		<div class='leftNavAlogo'>
+		<div class='leftNavAlogo' id='emailLink'>
+
+		  <a class='navLink' href="http://localhost/mywebsite/contact.php"></a>
+
 		   <img class='logoImg inactiveLeftNavAlogo' src="img/email.png">
 			
 		</div>

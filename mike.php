@@ -10,11 +10,34 @@
 
 body{
 
-	background: rgb(0,0,0,0.8);
 	color: rgb(255,255,255,0.9);
 }
 
 
+.inactiveLeftNavAlogo{
+   opacity: 1;
+}
+
+.inactiveLeftNavAlogo{
+   opacity: 1;
+}
+
+.inactiveLeftNavAlogo{
+   opacity: 1;
+}
+
+.inactiveLeftNavAlogo{
+   opacity: 1;
+}
+
+
+@media all and (max-width: 600px){
+
+
+
+
+
+}
 
 
 </style>
@@ -37,7 +60,8 @@ body{
 
   	  <div id='textDivB'>
 
-  	  	 <div id='textDivBA'>
+  	  	 <div id='textDivBA' >
+			 <a class="workLink" href="http://localhost/mywebsite/mikeWork.php"></a>
   	  	 	My work
   	  	 </div>
   	  	
