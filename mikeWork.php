@@ -50,12 +50,31 @@
        position: relative;
 	   top: 0;
 	   left: 0;
+	   height: 60%;
+	   width: 90%;
 	   display:flex;
 	   align-items:flex-start;
 	   justify-content:flex-start;
 	   flex-wrap: wrap;
 	   color:white;
 	   font-size:1.25vw;
+	   display:none;
+	   line-height: 22.5px;
+	   padding:5%;
+   }
+
+   .hiddenDiv2{
+  	   position: relative;
+	   bottom: 5%;
+	   left: 0;
+	   height:10%;
+	   width: 90%;
+	   display:flex;
+	   align-items:flex-start;
+	   justify-content:flex-start;
+	   flex-wrap: wrap;
+	   color:white;
+	   font-size:1.1vw;
 	   display:none;
 	   line-height: 22.5px;
 	   padding:5%;
@@ -112,6 +131,7 @@
    .projectSquare:hover > .projectSquareA { opacity: 0.05 }
    .projectSquare:hover > .projectSquareB { opacity: 0.05 }
    .projectSquare:hover > .hiddenDiv { display: flex; }
+   .projectSquare:hover > .hiddenDiv2{ display: flex; }
    .projectSquare:hover > .linkBtn { display: flex; }
 
 
@@ -354,8 +374,10 @@
 
     <div class="projectsDivRow">
 		<div class="projectSquare">
-		<div class='hiddenDiv'>Belleimage , photography selling app including a cart system (implementing Stripe API), and a message system. </br> <span style='opacity:0.9'>Test : type "event" in the search bar.</br> Test credit card :"42424242422"</span>
+		<div class='hiddenDiv'>Belleimage , photography selling app including a cart system (implementing Stripe API), and a message system. 
 		</div>
+		<div class='hiddenDiv2'>test : type "event" in the search bar </br>
+		 </div>
 
 		<a href='www.youtube.com' class='linkBtn'>
 	     	<button>use it</button>
@@ -373,7 +395,13 @@
 		 </div>	 
 	
 		 <div class="projectSquare">
-		 <div class='hiddenDiv'>SmartLab , productivity tracking app. Build your own lab , and get data about your work habits <span style=' opacity:0.9'>Test admin : "guest"</br> Test password : "pass"</span></div>
+		 <div class='hiddenDiv'>SmartLab , productivity tracking app. Build your own lab , and get data about your work habits</div>
+		 <div class='hiddenDiv2'>test : username "guest@test.com"
+		  </br>
+		  password "pass"
+		 </div>
+
+
 		 
 		 <a href='www.youtube.com' class='linkBtn'>
 		

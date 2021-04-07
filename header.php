@@ -37,29 +37,16 @@ body{
       
 #leftNav{
 
-
 	background: black;
-
 	height: 100%;
-
 	width: 5%;
-
 	position: fixed;
-
 	left: 0;
-
 	top:0;
-
 	display: flex;
-
 	flex-direction: column;
-
 	justify-content: flex-end;
-
 	align-items: center;
-
-
-
 
 }
 	
